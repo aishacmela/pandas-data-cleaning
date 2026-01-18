@@ -46,7 +46,6 @@ df = df.fillna("")
 
 
 #get a list of numbers to contact 
-
 for x in df.index:
     if df.loc[x, "Do_Not_Contact"] == "Y":
         df.drop(x, inplace=True)
